@@ -2,39 +2,43 @@
 <html lang="pt-br">
 
 <head>
-    <title> Marvel Studio </title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-        media="screen" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link type="text/css" src="slick-theme.css">
+    <link type="text/css" src="slick.css">
+    <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
 
 <body>
-    <div class="container">
-        <h1> Search Marvel Characters </h1>
-
-        <div id="search-form" class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <div class="form-group">
-                    <label> Characters Name </label>
-                    <input id="name" class="form-control" placeholder="Name">
-
-                </div>
-
-                <button type="submit" id="submit" class="btn btn-primary">
-                    Search
-                </button>
-            </div>
-        </div>
-        <div id="results" class="row">
-
-        </div>
+    <div class="text-center">
+  <form id="marvel-form" class="mx-auto mb-3">
+    <!--<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MarvelLogo.svg/1200px-MarvelLogo.svg.png" class="col-5 m-3">-->
+    <div class="form-group col-5 mx-auto">
+      <input type="text"
+             id="search-input"
+             class="form-control mr-1"
+             placeholder="Type a character name"
+              >
+    
+    <button type="submit"
+            class="btn btn-danger my-3"
+            >Search</button>
     </div>
+  </form> 
+  
+  <div class="slider">
+    <div class="mx-auto col-6 mt-5" id="results">
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="marvel.js"></script>
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </div>
+  
+  <div class="mx-auto col-6 mt-5" id="errorTxt"></div>
+  </div>
+</div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="marvel.js"></script>
 </body>
 
 </html>
