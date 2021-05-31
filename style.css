@@ -1,0 +1,32 @@
+body {
+    background: #eee;
+}
+.container {
+    background: white;
+}
+
+#search-form {
+    padding: 10px;
+}
+h1 {
+    text-align: center;
+}
+
+#results {
+    padding:10px;
+}
+h2 {
+    text-align: center;
+}
+.character-img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+p {
+    padding: 10px;
+}
+footer {
+    text-align:center;
+    padding: 10px;
+}
